@@ -38,7 +38,7 @@ function App() {
     { menuIsOpen ? setMenuIsOpen(false) : setMenuIsOpen(true) }
   }
 
-  const [alertThreshold, setAlertThreshold] = useState(600);
+  const [alertThreshold, setAlertThreshold] = useState(1000);
   useEffect(() => {
     //@ts-ignore
     setAlertsDataState(newAlert(podDataState, alertThreshold));
